@@ -1,79 +1,131 @@
-const treinos = [
+const treino = [
+  // SEMANA 1
   {
-    dia: "DIA 1 – Peito + Tríceps + Core",
-    tecnica: "Reverse Pyramid + Pré-exaustão",
-    objetivo: "Hipertrofia estética com foco em peitoral e tríceps",
+    dia: "Dia 1 – Full Body (Circuito)",
+    tecnica: "Circuito de Corpo Inteiro",
+    objetivo: "Ativar grandes grupos musculares para aumento de gasto calórico",
+    tempo: "40 min",
     exercicios: [
-      ["Crossover polia baixa", "3", "15", "Pré-exaustão reversa", "Foco em alongamento"],
-      ["Supino reto barra", "4", "6-8-10-12", "Reverse pyramid", "Começa pesado e reduz carga"],
-      ["Supino inclinado com halteres", "3", "10", "Pausa 1s no topo", "Controle de amplitude"],
-      ["Tríceps testa barra W", "3", "12", "Cadência controlada", "Evitar abrir demais os cotovelos"],
-      ["Tríceps corda", "3", "15", "Rest-pause na última", "5s de pausa e completar repetições"],
-      ["Prancha com elevação de pernas", "3", "30s + 15", "Bi-set", "Core ativo"]
-    ]
+      ["Agachamento livre", "3x15", "Cadência controlada"],
+      ["Flexão de braço com joelho no chão", "3x10", "Amplitude máxima"],
+      ["Remada baixa + Elevação lateral", "3x12 cada", "Circuito sem descanso"],
+      ["Prancha abdominal", "3x30s", "Foco em respiração e controle"],
+    ],
+    cardio: "15 min caminhada rápida ou escada"
   },
   {
-    dia: "DIA 2 – Costas + Bíceps",
-    tecnica: "Cluster Sets + Cadência",
-    objetivo: "Espessura dorsal e definição de bíceps",
+    dia: "Dia 2 – Parte Superior (Bi-set)",
+    tecnica: "Bi-set leve para parte superior",
+    objetivo: "Estimular músculos superiores com intensidade moderada",
+    tempo: "35-40 min",
     exercicios: [
-      ["Puxada frente pegada média", "4", "10", "Cadência 3-0-1", "Controle no retorno"],
-      ["Remada unilateral halter", "3", "12 cada", "Conexão mente-músculo", "Foco na contração"],
-      ["Remada baixa máquina", "4", "16 (4x4)", "Cluster set", "15s de descanso interno"],
-      ["Rosca direta barra", "3", "10", "Drop-set final", "Última série até falha"],
-      ["Rosca alternada inclinada", "3", "12", "-", "Rotação ao subir"],
-      ["Rosca concentrada", "2", "Até falha", "Pausa no topo", "Segurar 2s"]
-    ]
+      ["Supino reto halteres + Crucifixo", "3x12", "Cadência suave"],
+      ["Remada unilateral", "3x12 por braço", "Foco no controle"],
+      ["Desenvolvimento com halteres", "3x12", "Sem descansar entre braços"],
+      ["Tríceps corda", "3x15", "Descanso curto"],
+    ],
+    cardio: "20 min bicicleta ergométrica"
   },
   {
-    dia: "DIA 3 – Posteriores + Core",
-    tecnica: "Tensão contínua + Isometria",
-    objetivo: "Ênfase em glúteo e posterior com controle",
+    dia: "Dia 3 – Inferior + Core (Circuito)",
+    tecnica: "Circuito alternado de inferiores e abdominal",
+    objetivo: "Estimular parte inferior + abdômen com gasto calórico",
+    tempo: "45 min",
     exercicios: [
-      ["Stiff com halteres pesados", "4", "8", "3s descida", "Explodir na subida"],
-      ["Mesa flexora", "4", "12", "Isometria 1s no topo", "Ativação consciente"],
-      ["Passada estacionária com halteres", "3", "10/10", "Profunda e controlada", "Sem balanço"],
-      ["Elevação pélvica com peso", "3", "15", "Pausa no topo", "Sustentar 1s"],
-      ["Abdômen oblíquo + prancha lateral", "3", "15 + 30s", "Bi-set", "Estabilidade e rotação"]
-    ]
+      ["Afundo com halteres", "3x10 cada perna", "Cadência 3-1-1"],
+      ["Leg press 45°", "3x15", "Amplitude máxima"],
+      ["Elevação pélvica", "3x20", "Contração máxima"],
+      ["Abdominal remador", "3x20", "Sem descanso"],
+      ["Prancha lateral alternando lados", "3x30s", "Controle total"],
+    ],
+    cardio: "20 min escada ou caminhada inclinada"
+  },
+
+  // SEMANA 2
+  {
+    dia: "Dia 4 – Full Body (Progressão)",
+    tecnica: "Circuito com progressão de carga e estímulo",
+    objetivo: "Manter o corpo ativo e responsivo",
+    tempo: "40 min",
+    exercicios: [
+      ["Agachamento com halteres", "3x12", "Procurar progredir carga"],
+      ["Flexão tradicional", "3x10", "Amplitudes completas"],
+      ["Remada com barra + Elevação frontal", "3x12", "Sem descanso"],
+      ["Prancha com toque nos ombros", "3x30s", "Estabilidade"],
+    ],
+    cardio: "20 min escada ou trote leve"
   },
   {
-    dia: "DIA 4 – Ombros + Trapézio + Antebraço",
-    tecnica: "Drop-set sequencial + Supersérie",
-    objetivo: "Definição do deltoide e vascularização de antebraço",
+    dia: "Dia 5 – Superior (Bi-set Progressivo)",
+    tecnica: "Bi-set com novos agrupamentos musculares",
+    objetivo: "Elevar estímulo metabólico",
+    tempo: "40 min",
     exercicios: [
-      ["Desenvolvimento com halteres sentado", "4", "10", "Drop-set na última", "Foco em amplitude"],
-      ["Elevação lateral + frontal", "3", "12+12", "Supersérie", "Sem descanso entre movimentos"],
-      ["Crucifixo inverso na polia", "3", "15", "Tempo sob tensão 2-1-2", "Deltoide posterior"],
-      ["Encolhimento com barra", "3", "15", "Pausa no topo", "Segurar 1s"],
-      ["Rosca punho + rosca inversa", "3", "15+12", "Bi-set", "Foco vascular"]
-    ]
+      ["Supino inclinado + Crucifixo inclinado", "3x12", "Amplitude total"],
+      ["Puxada frente + Rosca direta", "3x15", "Peso leve/moderado"],
+      ["Desenvolvimento na máquina", "3x12", "Cadência lenta"],
+      ["Tríceps banco", "3x15", "Descanso mínimo"],
+    ],
+    cardio: "20 min escada"
   },
   {
-    dia: "DIA 5 – Peito Variado + Core",
-    tecnica: "Rest-Pause + Pump focalizado",
-    objetivo: "Estímulos variados no peitoral superior e core",
+    dia: "Dia 6 – Inferior + Core",
+    tecnica: "Circuito alternado de força e abdominal",
+    objetivo: "Ativar glúteos, pernas e abdômen",
+    tempo: "45 min",
     exercicios: [
-      ["Supino inclinado com barra", "4", "8-8-6-6", "Rest-pause na última", "Recuperação curta"],
-      ["Crossover em Y (ângulo alto)", "3", "15", "Pump", "Pausa de 1s na contração"],
-      ["Supino reto com halteres", "3", "10", "Amplitude + contração", "Controle da fase excêntrica"],
-      ["Flexão com isometria no fundo", "2", "Até falha", "Segurar 2s no ponto mais baixo", "-"],
-      ["Crunch com peso + prancha dinâmica", "3", "15 + 30s", "Bi-set", "Core completo"]
-    ]
+      ["Passada andando", "3x10 cada perna", "Movimento contínuo"],
+      ["Cadeira extensora", "3x15", "Sem descanso"],
+      ["Elevação pélvica com peso", "3x15", "Contração máxima"],
+      ["Abdominal com perna elevada", "3x20", "Controle de tronco"],
+      ["Prancha lateral com elevação de perna", "3x30s", "Equilíbrio"],
+    ],
+    cardio: "20 min caminhada rápida"
+  },
+
+  // SEMANA 3
+  {
+    dia: "Dia 7 – Full Body Avançado p/ Iniciante",
+    tecnica: "Circuito intenso para fechamento de ciclo",
+    objetivo: "Maximizar gasto calórico com exercícios compostos",
+    tempo: "45 min",
+    exercicios: [
+      ["Agachamento sumô com halter", "4x12", "Amplitude máxima"],
+      ["Flexão inclinada + Prancha", "3x10 + 30s", "Sem descanso"],
+      ["Remada curvada com halteres", "3x12", "Controle da lombar"],
+      ["Elevação lateral + frontal alternada", "3x15", "Estímulo leve"],
+    ],
+    cardio: "25 min escada ou corrida leve"
   },
   {
-    dia: "DIA 6 – Braços + Peito Pump",
-    tecnica: "Bi-set pesado + Pump",
-    objetivo: "Volume e estética em braços com pump final de peito",
+    dia: "Dia 8 – Superior (Finalização)",
+    tecnica: "Bi-set com foco em exaustão controlada",
+    objetivo: "Fechar o estímulo com segurança",
+    tempo: "40 min",
     exercicios: [
-      ["Tríceps corda + testa (bi-set)", "3", "12+12", "-", "Sem descanso entre"],
-      ["Rosca direta + martelo (bi-set)", "3", "10+10", "-", "Conexão e pico"],
-      ["Rosca Scott com pausa final", "3", "10", "Pausa 2s no topo", "Maximizar tensão"],
-      ["Crossover alto + baixo", "3", "15+15", "Combo pump", "Estética total"],
-      ["Flexão diamante", "2", "Até falha", "Controle lento", "-"]
-    ]
+      ["Supino máquina + Crucifixo no cross", "3x12", "Amplitude máxima"],
+      ["Puxada frente pegada fechada", "3x12", "Foco no dorsal"],
+      ["Rosca alternada", "3x15", "Movimento isolado"],
+      ["Elevação lateral + tríceps corda", "3x15", "Sem descanso"],
+    ],
+    cardio: "25 min escada"
+  },
+  {
+    dia: "Dia 9 – Inferior + Core (Finalização)",
+    tecnica: "Circuito completo de base + abdominal",
+    objetivo: "Encerrar com foco em glúteo, perna e core",
+    tempo: "45 min",
+    exercicios: [
+      ["Agachamento no smith", "3x15", "Cadência lenta"],
+      ["Leg press + Cadeira flexora", "3x12", "Bi-set intenso"],
+      ["Elevação pélvica com pausa isométrica", "3x20", "Contração máxima"],
+      ["Abdominal prancha dinâmica", "3x30s", "Foco na respiração"],
+      ["Prancha lateral com braço estendido", "3x30s", "Sem compensar"],
+    ],
+    cardio: "25 min caminhada inclinada"
   }
 ];
+
 
 const treinoContainer = document.getElementById("treinoContainer");
 const progresso = JSON.parse(localStorage.getItem("progresso") || "{}");
@@ -174,4 +226,5 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
