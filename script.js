@@ -1,107 +1,166 @@
 const treinos = [
   {
-    dia: "DIA 1 – FULL BODY INICIAL",
-    tecnica: "Cadência controlada + foco em execução",
-    objetivo: "Ativar toda musculatura com volume leve",
+    dia: "DIA 1 – FULL BODY (CIRCUITO LEVE)",
+    tecnica: "Circuito leve com foco em gasto calórico",
+    objetivo: "Ativar o corpo inteiro com exercícios básicos",
     exercicios: [
-      { nome: "Agachamento com halteres", series: "3", reps: "12", tecnica: "Cadência 3s descida", obs: "" },
-      { nome: "Supino reto com halteres", series: "3", reps: "12", tecnica: "Amplitude total", obs: "" },
-      { nome: "Puxada frente no pulley", series: "3", reps: "12", tecnica: "Contração máxima", obs: "" },
-      { nome: "Elevação lateral", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Abdominal tradicional", series: "3", reps: "20", tecnica: "", obs: "" }
+      { nome: "Agachamento com peso corporal", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Flexão de braço joelho no chão", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Polichinelos", series: "3", reps: "30s", tecnica: "Circuito", obs: "" },
+      { nome: "Remada baixa com elástico", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Prancha frontal", series: "3", reps: "30s", tecnica: "", obs: "" }
     ]
   },
   {
-    dia: "DIA 2 – MEMBROS SUPERIORES",
-    tecnica: "Volume moderado + bi-set leve",
-    objetivo: "Trabalhar força e resistência muscular local",
+    dia: "DIA 2 – INFERIOR + CARDIO",
+    tecnica: "Cadência + finalização com cardio",
+    objetivo: "Estimular parte inferior e acelerar o metabolismo",
     exercicios: [
-      { nome: "Supino inclinado com halteres", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Remada baixa", series: "3", reps: "12", tecnica: "Foco na postura", obs: "" },
-      { nome: "Desenvolvimento com halteres", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Rosca direta + Tríceps corda", series: "3", reps: "10 + 10", tecnica: "Bi-set leve", obs: "" }
-    ]
-  },
-  {
-    dia: "DIA 3 – MEMBROS INFERIORES",
-    tecnica: "Cadência + estímulo de base",
-    objetivo: "Fortalecer pernas e glúteos",
-    exercicios: [
-      { nome: "Leg press", series: "4", reps: "12", tecnica: "Cadência 3-1-1", obs: "" },
+      { nome: "Afundo no lugar", series: "3", reps: "12 por perna", tecnica: "", obs: "" },
       { nome: "Cadeira extensora", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Mesa flexora", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Glúteo no cross ou caneleira", series: "3", reps: "20", tecnica: "", obs: "" },
-      { nome: "Panturrilha sentado", series: "3", reps: "20", tecnica: "", obs: "" }
+      { nome: "Cadeira flexora", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Elevação de quadril", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Corrida leve", series: "-", reps: "10min", tecnica: "Cardio final", obs: "Se possível" }
     ]
   },
   {
-    dia: "DIA 4 – FULL BODY PROGRESSIVO",
-    tecnica: "Volume crescente",
-    objetivo: "Avançar na adaptação e técnica",
+    dia: "DIA 3 – PARTE SUPERIOR + CORE",
+    tecnica: "Bi-set leve com foco em definição",
+    objetivo: "Trabalhar braços, ombros e abdômen",
     exercicios: [
-      { nome: "Agachamento com barra guiada", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Supino reto máquina", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Puxada por trás", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Desenvolvimento máquina", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Abdominal infra", series: "3", reps: "20", tecnica: "", obs: "" }
+      { nome: "Supino máquina + Crucifixo", series: "3", reps: "12 + 12", tecnica: "Bi-set", obs: "" },
+      { nome: "Puxada frontal", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Desenvolvimento com halteres", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Abdominal oblíquo alternado", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Prancha lateral", series: "3", reps: "30s", tecnica: "", obs: "" }
     ]
   },
   {
-    dia: "DIA 5 – SUPERIOR (ÊNFASE EM BRAÇOS)",
-    tecnica: "Técnica de bi-set e cadência",
-    objetivo: "Estímulo local e progressão de força",
+    dia: "DIA 4 – FULL BODY EM CIRCUITO",
+    tecnica: "Alta repetição + intensidade moderada",
+    objetivo: "Aumentar o gasto calórico",
     exercicios: [
-      { nome: "Supino reto com barra", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Remada unilateral", series: "3", reps: "12", tecnica: "Foco no controle", obs: "" },
-      { nome: "Rosca alternada + Tríceps testa", series: "3", reps: "10 + 10", tecnica: "Bi-set", obs: "" },
-      { nome: "Elevação lateral sentado", series: "3", reps: "15", tecnica: "", obs: "" }
+      { nome: "Agachamento + Flexão", series: "3", reps: "15 + 10", tecnica: "Bi-set", obs: "" },
+      { nome: "Elevação lateral + Remada curvada", series: "3", reps: "12 + 12", tecnica: "Bi-set", obs: "" },
+      { nome: "Abdominal canivete", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Corrida leve", series: "-", reps: "12min", tecnica: "Cardio final", obs: "" }
     ]
   },
   {
-    dia: "DIA 6 – INFERIOR (ESTÍMULO UNILATERAL)",
-    tecnica: "Ênfase em estabilidade e simetria",
-    objetivo: "Promover controle e ativação muscular",
+    dia: "DIA 5 – INFERIOR (VOLUME LEVE)",
+    tecnica: "Técnica de base e coordenação",
+    objetivo: "Fortalecer glúteos e pernas",
     exercicios: [
-      { nome: "Avanço com step", series: "3", reps: "10 cada perna", tecnica: "", obs: "" },
-      { nome: "Cadeira abdutora", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Agachamento com halteres", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Passada andando", series: "3", reps: "10 por perna", tecnica: "", obs: "" },
       { nome: "Stiff com halteres", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Cadeira extensora unilateral", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Cadeira abdutora", series: "3", reps: "20", tecnica: "", obs: "" },
       { nome: "Panturrilha em pé", series: "3", reps: "20", tecnica: "", obs: "" }
     ]
   },
   {
-    dia: "DIA 7 – FULL BODY FINAL",
-    tecnica: "Estímulo global + leve sobrecarga",
-    objetivo: "Consolidação da base",
+    dia: "DIA 6 – SUPERIOR FUNCIONAL",
+    tecnica: "Exercícios básicos com boa execução",
+    objetivo: "Definir membros superiores com segurança",
     exercicios: [
-      { nome: "Agachamento guiado", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Supino inclinado halteres", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Remada baixa", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Desenvolvimento com halteres", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Abdominal oblíquo", series: "3", reps: "20", tecnica: "", obs: "" }
+      { nome: "Supino reto máquina", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Remada unilateral", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Elevação frontal com halteres", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Rosca direta com barra", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Tríceps testa com halteres", series: "3", reps: "15", tecnica: "", obs: "" }
     ]
   },
   {
-    dia: "DIA 8 – PARTE SUPERIOR FINAL",
-    tecnica: "Bi-set + volume contínuo",
-    objetivo: "Força e definição inicial",
+    dia: "DIA 7 – CORE + CARDIO",
+    tecnica: "Circuito abdominal + cardio leve",
+    objetivo: "Envolver musculatura do core e estimular gasto",
+    exercicios: [
+      { nome: "Abdominal reto", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Prancha com apoio", series: "3", reps: "30s", tecnica: "", obs: "" },
+      { nome: "Abdominal bicicleta", series: "3", reps: "30s", tecnica: "", obs: "" },
+      { nome: "Cardio: Esteira ou escada", series: "-", reps: "15min", tecnica: "Cardio final", obs: "" }
+    ]
+  },
+  {
+    dia: "DIA 8 – FULL BODY COMBINADO",
+    tecnica: "Circuito com bi-set leve",
+    objetivo: "Estimular o corpo todo e aumentar gasto",
+    exercicios: [
+      { nome: "Afundo no step", series: "3", reps: "12 por perna", tecnica: "", obs: "" },
+      { nome: "Flexão de braço", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Polichinelos", series: "3", reps: "40s", tecnica: "", obs: "" },
+      { nome: "Remada curvada", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Abdominal com elevação de pernas", series: "3", reps: "15", tecnica: "", obs: "" }
+    ]
+  },
+  {
+    dia: "DIA 9 – MEMBROS INFERIORES",
+    tecnica: "Volume moderado + foco em posterior",
+    objetivo: "Melhorar base e resistência",
+    exercicios: [
+      { nome: "Leg press", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Mesa flexora", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Cadeira abdutora", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Agachamento sumô com halteres", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Panturrilha sentado", series: "3", reps: "20", tecnica: "", obs: "" }
+    ]
+  },
+  {
+    dia: "DIA 10 – PARTE SUPERIOR + CORE",
+    tecnica: "Execução controlada + ativação abdominal",
+    objetivo: "Definir e tonificar a parte de cima",
+    exercicios: [
+      { nome: "Supino inclinado com halteres", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Puxada frontal", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Elevação lateral", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Rosca alternada", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Prancha frontal com toques no ombro", series: "3", reps: "30s", tecnica: "", obs: "" }
+    ]
+  },
+  {
+    dia: "DIA 11 – CIRCUITO FUNCIONAL",
+    tecnica: "Alta repetição com pouco descanso",
+    objetivo: "Gastar energia e manter constância",
+    exercicios: [
+      { nome: "Agachamento livre", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Passada alternada", series: "3", reps: "12 por perna", tecnica: "", obs: "" },
+      { nome: "Corrida parada (skipping)", series: "3", reps: "40s", tecnica: "", obs: "" },
+      { nome: "Abdominal cruzado", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Esteira ou escada", series: "-", reps: "10min", tecnica: "Cardio final", obs: "" }
+    ]
+  },
+  {
+    dia: "DIA 12 – INFERIOR + CARDIO",
+    tecnica: "Foco em ativação muscular e ritmo",
+    objetivo: "Potencializar glúteo e posterior",
+    exercicios: [
+      { nome: "Avanço com halteres", series: "3", reps: "10 por perna", tecnica: "", obs: "" },
+      { nome: "Cadeira extensora", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Stiff com barra ou halteres", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Corrida leve", series: "-", reps: "12min", tecnica: "Cardio final", obs: "" }
+    ]
+  },
+  {
+    dia: "DIA 13 – SUPERIOR COM BI-SET",
+    tecnica: "Bi-set de peito + costas e braços",
+    objetivo: "Maior intensidade com menos tempo",
     exercicios: [
       { nome: "Supino reto + Crucifixo", series: "3", reps: "10 + 12", tecnica: "Bi-set", obs: "" },
-      { nome: "Puxada frente aberta", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Elevação frontal + lateral", series: "3", reps: "10 + 10", tecnica: "", obs: "" },
-      { nome: "Tríceps corda", series: "3", reps: "15", tecnica: "", obs: "" }
+      { nome: "Remada baixa + Pullover", series: "3", reps: "10 + 12", tecnica: "Bi-set", obs: "" },
+      { nome: "Rosca martelo", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Tríceps testa com halteres", series: "3", reps: "15", tecnica: "", obs: "" }
     ]
   },
   {
-    dia: "DIA 9 – PERNAS FINAL + CORE",
-    tecnica: "Volume moderado + técnica",
-    objetivo: "Finalizar com simetria e resistência",
+    dia: "DIA 14 – FULL BODY + CORE",
+    tecnica: "Finalização de semana com intensidade leve",
+    objetivo: "Fechar a segunda semana com consistência",
     exercicios: [
-      { nome: "Leg press", series: "4", reps: "12", tecnica: "", obs: "" },
-      { nome: "Mesa flexora", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Cadeira adutora", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Glúteo com caneleira", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Prancha frontal", series: "3", reps: "40s", tecnica: "", obs: "" }
+      { nome: "Agachamento sumô com halteres", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Flexão de braço", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Elevação lateral com peso leve", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Abdominal prancha", series: "3", reps: "30s", tecnica: "", obs: "" },
+      { nome: "Cardio: Escada ou caminhada rápida", series: "-", reps: "12min", tecnica: "Cardio leve", obs: "" }
     ]
   }
 ];
@@ -208,6 +267,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
