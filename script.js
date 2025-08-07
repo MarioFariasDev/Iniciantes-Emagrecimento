@@ -168,6 +168,7 @@ const treinos = [
 
 
 
+// --- RENDERIZAÇÃO DOS TREINOS ---
 const treinoContainer = document.getElementById("treinoContainer");
 const progresso = JSON.parse(localStorage.getItem("progresso") || "{}");
 
@@ -202,11 +203,11 @@ treinos.forEach((treino, i) => {
     html += `
       <tr class="exercise-row ${doneClass}" data-key="${key}">
         <td><input type="checkbox" ${checked}></td>
-        <td>${ex[0]}</td>
-        <td>${ex[1]}</td>
-        <td>${ex[2]}</td>
-        <td>${ex[3]}</td>
-        <td>${ex[4]}</td>
+        <td>${ex.nome || "-"}</td>
+        <td>${ex.series || "-"}</td>
+        <td>${ex.reps || "-"}</td>
+        <td>${ex.tecnica || "-"}</td>
+        <td>${ex.obs || "-"}</td>
         <td>
           <button class="timer-btn" onclick="iniciarTimer(this)">⏱️</button>
           <span class="timer-display">00:00</span>
@@ -216,11 +217,11 @@ treinos.forEach((treino, i) => {
   });
 
   html += `</tbody></table>`;
-  if (treino.cardio) html += `<p><strong>Cardio:</strong> ${treino.cardio}</p>`;
   card.innerHTML = html;
   treinoContainer.appendChild(card);
 });
 
+// --- CHECKBOX PROGRESSO ---
 document.querySelectorAll(".exercise-row input[type='checkbox']").forEach(input => {
   input.addEventListener("change", function () {
     const row = this.closest(".exercise-row");
@@ -232,6 +233,7 @@ document.querySelectorAll(".exercise-row input[type='checkbox']").forEach(input 
   });
 });
 
+// --- TIMER POR EXERCÍCIO ---
 function iniciarTimer(btn) {
   const span = btn.nextElementSibling;
   let tempo = 60;
@@ -255,6 +257,7 @@ function formatar(s) {
   return `${m}:${sec}`;
 }
 
+// --- FEEDBACK ---
 const feedback = document.getElementById("feedback");
 const feedbackSalvo = localStorage.getItem("feedbackGlobal");
 if (feedbackSalvo) feedback.value = feedbackSalvo;
@@ -264,7 +267,8 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
   alert("Feedback salvo com sucesso!");
 });
 
-document.getElementById("darkToggle").addEventListener("click", () => {
+// --- DARK MODE ---
+document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
